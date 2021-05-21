@@ -36,7 +36,7 @@ if ($.isNode()) {
 }
 let wantProduct = ``;//心仪商品名称
 const JD_API_HOST = 'https://api.m.jd.com/client.action';
-const inviteCodes = ["T0124KQ2GkdM81PfCjVWnYaS5kRrbA@T019-ak0PWRKgCO3W02JyLYCjVWnYaS5kRrbA@T019-aksBmRfkjSreH-R1YQCjVWnYaS5kRrbA@T0225KkcRR9N_AGCIRP2kPZfdgCjVWnYaS5kRrbA"];
+const inviteCodes = ["T020anXOl4iSId5B9JJJQXu5CjVWnYaS5kRrbA@T0225KkcRxpM9AeFdUj9waMIdwCjVWnYaS5kRrbA@T018v_h7QBwf_FDQIh6b1ACjVWnYaS5kRrbA@T0205KkcElxYijGBY2ye571MCjVWnYaS5kRrbA"];
 !(async () => {
   await requireConfig();
   if (!cookiesArr[0]) {
