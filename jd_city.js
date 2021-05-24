@@ -243,7 +243,7 @@ function city_lotteryAward() {
 function readShareCode() {
   console.log(`开始`)
   return new Promise(async resolve => {
-    $.get({url: `https://raw.githubusercontent.com/1277002811/JDbot/master/shareCodes/jd_cityShareCodes.json`, 'timeout': 10000}, (err, resp, data) => {
+    $.get({url: `https://raw.githubusercontent.com/mainlll/nginx/master/shareCodes/jd_cityShareCodes.json`, 'timeout': 10000}, (err, resp, data) => {
       try {
         if (err) {
           console.log(`${JSON.stringify(err)}`)
