@@ -19,7 +19,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          repository: hajiuhajiu/jdsign1112
+          repository: mainlll/nginx
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -37,8 +37,8 @@ jobs:
 
       - name: '运行'
         run: |
-          git config --global user.email 2705322732@qq.com
-          git config --global user.name hajiuhajiu
+          git config --global user.email 745732054@qq.com
+          git config --global user.name wyixue
           git rm -r --cached .
           git add .
           git commit -m 'update .gitignore'

@@ -51,8 +51,8 @@ const inviteCodes = [
 !(async () => {
   $.tuanList = []
   await requireConfig();
-  if (helpAuthor) await getAuthorShareCode('https://raw.githubusercontent.com/hajiuhajiu/jdsign1112/master/jd_zz.json');
-  //if (helpAuthor) await getAuthorShareCode('https://raw.githubusercontent.com/hajiuhajiu/jdsign1112/master/backUp/zztuan.json');
+  if (helpAuthor) await getAuthorShareCode('https://raw.githubusercontent.com/mainlll/nginx/master/jd_zz.json');
+  //if (helpAuthor) await getAuthorShareCode('https://raw.githubusercontent.com/mainlll/nginx/master/backUp/zztuan.json');
   if (!cookiesArr[0]) {
     $.msg($.name, '【提示】请先获取京东账号一cookie\n直接使用NobyDa的京东签到获取', 'https://bean.m.jd.com/bean/signIndex.action', {"open-url": "https://bean.m.jd.com/bean/signIndex.action"});
     return;
@@ -344,7 +344,7 @@ async function helpFriends() {
 function readShareCode() {
   console.log(`开始`)
   return new Promise(async resolve => {
-    $.get({url: `https://raw.githubusercontent.com/hajiuhajiu/jdsign1112/master/backUp/zztuan.json`, 'timeout': 10000}, (err, resp, data) => {
+    $.get({url: `https://raw.githubusercontent.com/mainlll/nginx/master/backUp/zztuan.json`, 'timeout': 10000}, (err, resp, data) => {
       try {
         if (err) {
           console.log(`${JSON.stringify(err)}`)
