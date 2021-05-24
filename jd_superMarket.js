@@ -1489,7 +1489,7 @@ function shareCodesFormat() {
     if (jdSuperMarketShareArr[$.index - 1]) {
       newShareCodes = jdSuperMarketShareArr[$.index - 1].split('@');
     } else {
-      console.log(`由于您未提供与京京东账号相对应的shareCode,下面助力将采纳本脚本自带的助力码\n`)
+      console.log(`由于您未提供与京京东账号相对应的shareCode,下面助力将采纳本脚本自带的助力码???????\n`)
       const tempIndex = $.index > shareCodes.length ? (shareCodes.length - 1) : ($.index - 1);
       newShareCodes = shareCodes[tempIndex].split('@');
     }

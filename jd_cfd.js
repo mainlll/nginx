@@ -598,7 +598,7 @@ let cookiesArr = [], cookie = '', token;
              try {
                  if (_0x2b62cb) {
                      if (_0x143878['HcJHc'](_0x143878['oDaQN'], 'bMyxV')) {
-                         console['log']('由于您第' + $['index'] + '个京东账号未提供shareCode,将采纳本脚本自带的助力码\n');
+                         console['log']('由于您第' + $['index'] + '个京东账号未提供shareCode,将采纳本脚本自带的助力码???????\n');
                          $['newShareCodes'] = $['strMyShareIds'];
                      } else {
                          console['log']('' + JSON['stringify'](_0x2b62cb));
@@ -3181,7 +3181,7 @@ let cookiesArr = [], cookie = '', token;
              if ($['shareCodesArr'][$['index'] - 0x1]) {
                  $['newShareCodes'] = $['shareCodesArr'][_0x4b5b8e['DYtvR']($['index'], 0x1)]['split']('@');
              } else {
-                 console['log']('由于您第' + $['index'] + '个京东账号未提供shareCode,将采纳本脚本自带的助力码\n');
+                 console['log']('由于您第' + $['index'] + '个京东账号未提供shareCode,将采纳本脚本自带的助力码???????\n');
                  $['newShareCodes'] = $['strMyShareIds'];
              }
              const _0x4cd7d2 = await _0x4b5b8e['uKlcq'](readShareCode);
