@@ -36,7 +36,7 @@ if ($.isNode()) {
 }
 let wantProduct = ``;//心仪商品名称
 const JD_API_HOST = 'https://api.m.jd.com/client.action';
-const inviteCodes = ["T020anXOl4iSId5B9JJJQXu5CjVWnYaS5kRrbA@T0225KkcRxpM9AeFdUj9waMIdwCjVWnYaS5kRrbA@T018v_h7QBwf_FDQIh6b1ACjVWnYaS5kRrbA@T0205KkcElxYijGBY2ye571MCjVWnYaS5kRrbA"];
+const inviteCodes = ["T020anXOl4iSId5B9JJJQXu5CjVWnYaS5kRrbA@T0225KkcRxpM9AeFdUj9waMIdwCjVWnYaS5kRrbA@T018v_h7QBwf_FDQIh6b1ACjVWnYaS5kRrbA@T0205KkcElxYijGBY2ye571MCjVWnYaS5kRrbA@T0225KkcRkwYoVLSIE_0xvIIJQCjVWnYaS5kRrbA@T0154qQiHklOrQiIZk8CjVWnYaS5kRrbAT020anXOl4iSId5B9JJJQXu5CjVWnYaS5kRrbA@T0225KkcRxpM9AeFdUj9waMIdwCjVWnYaS5kRrbA@T018v_h7QBwf_FDQIh6b1ACjVWnYaS5kRrbA@T0205KkcElxYijGBY2ye571MCjVWnYaS5kRrbA"];
 !(async () => {
   await requireConfig();
   if (!cookiesArr[0]) {
@@ -605,7 +605,7 @@ function jdfactory_getHomeData() {
 function readShareCode() {
   console.log(`开始`)
   return new Promise(async resolve => {
-    $.get({url: `https://raw.githubusercontent.com/mainlll/code/main/sharecode/JD_Factory.json`, timeout: 10000}, (err, resp, data) => {
+    $.get({url: `https://raw.githubusercontent.com/mainlll/nginx/main/sharecode/JD_Factory.json`, timeout: 10000}, (err, resp, data) => {
       try {
         if (err) {
           console.log(`${JSON.stringify(err)}`)
