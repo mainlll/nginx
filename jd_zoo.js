@@ -25,27 +25,10 @@ cron "13 0-23/2 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/mast
 const $ = new Env('618动物联萌');
 const notify = $.isNode() ? require('./sendNotify') : '';
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
-//IOS等用户直接用NobyDa的jd cookie
-<<<<<<< HEAD
+
 let cookiesArr = [];
 $.cookie = '';
-$.inviteList =  ['ZXTKT020anXOl4iSId5B9JJJQXu5FjRWn6-7zx55awQ','ZXTKT0225KkcRxpM9AeFdUj9waMIdwFjRWn6-7zx55awQ','ZXTKT018v_h7QBwf_FDQIh6b1AFjRWn6-7zx55awQ','ZXTKT0225KkcRkwYoVLSIE_0xvIIJQFjRWn6-7zx55awQ' 
-=======
-let cookiesArr = [], cookie = '',secretp = '',
-//商圈码
-shareCodeList = [
-  'sSKNX-MpqKOJsNu_nc7YV2YFcyBor_NSY43CjX-fQYTWl_EEmc_mreFHDXjlkA',
-  'sSKNX-MpqKOJsNu_nc7YV2YFcyBor_NSY43CjfFDk1Til2ot1KSCQU-_ZAwdge8',
-  'sSKNX-MpqKOJsNu_nc7YV2YFcyBor_NSY43CjaoS9FPNvQf6lWkGqiuPAEg',
-  'sSKNX-MpqKOJsNu-y5qNAs7sC1bdQ4mu4bb6jw8Xg8ApzVw8amGRUuSsyBVQJdU'
-];
-//个人码
-inviteIdList = [
-  'ZXTKT020anXOl4iSId5B9JJJQXu5FjRWn6-7zx55awQ','ZXTKT0225KkcRxpM9AeFdUj9waMIdwFjRWn6-7zx55awQ',
-  'ZXTKT018v_h7QBwf_FDQIh6b1AFjRWn6-7zx55awQ',
-  'ZXTKT0225KkcRkwYoVLSIE_0xvIIJQFjRWn6-7zx55awQ'
->>>>>>> 05a6e1e2f09eebcda824c085744b9b8f74d7867a
-];
+$.inviteList =  ['ZXTKT020anXOl4iSId5B9JJJQXu5FjRWn6-7zx55awQ','ZXTKT0225KkcRxpM9AeFdUj9waMIdwFjRWn6-7zx55awQ','ZXTKT018v_h7QBwf_FDQIh6b1AFjRWn6-7zx55awQ','ZXTKT0225KkcRkwYoVLSIE_0xvIIJQFjRWn6-7zx55awQ'];
 $.pkInviteList = ['sSKNX-MpqKOJsNu_nc7YV2YFcyBor_NSY43CjX-fQYTWl_EEmc_mreFHDXjlkA','sSKNX-MpqKOJsNu_nc7YV2YFcyBor_NSY43CjfFDk1Til2ot1KSCQU-_ZAwdge8','sSKNX-MpqKOJsNu_nc7YV2YFcyBor_NSY43CjaoS9FPNvQf6lWkGqiuPAEg','sSKNX-MpqKOJsNu-y5qNAs7sC1bdQ4mu4bb6jw8Xg8ApzVw8amGRUuSsyBVQJdU'];
 $.secretpInfo = {};
 if ($.isNode()) {
