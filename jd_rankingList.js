@@ -31,7 +31,7 @@ async function main() {
     eval($.body);
   }
 }
-function updateShareCodes(url = 'https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_rankingList.js') {
+function updateShareCodes(url = 'https://raw.githubusercontent.com/mainlll/nginx/master/jd_rankingList.js') {
   return new Promise(resolve => {
     $.get({url}, async (err, resp, data) => {
       try {
