@@ -45,8 +45,6 @@ cron "13 0-23/2 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/mast
 const $ = new Env('618动物联萌');
 const notify = $.isNode() ? require('./sendNotify') : '';
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
-<<<<<<< HEAD
-
 let cookiesArr = [];
 $.cookie = '';
 $.inviteList =  ['ZXTKT020anXOl4iSId5B9JJJQXu5FjRWn6-7zx55awQ','ZXTKT0225KkcRxpM9AeFdUj9waMIdwFjRWn6-7zx55awQ','ZXTKT018v_h7QBwf_FDQIh6b1AFjRWn6-7zx55awQ','ZXTKT0225KkcRkwYoVLSIE_0xvIIJQFjRWn6-7zx55awQ','ZXTKT0154qQiHklOrQiIZk8FjRWn6-7zx55awQ'];
