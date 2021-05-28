@@ -33,7 +33,7 @@ let helpSelf = true // 循环助力，默认关闭
 let applyJdBean = 2000; //疯狂的JOY京豆兑换，目前最小值为2000京豆，默认为 0 不开启京豆兑换
 let cookiesArr = [], cookie = '', message = '';
 const inviteCodes = [
-'pTAIBPCrVYql6xuHRWk3wg==@p-8cvapR4OUiqt7cOdu7YKt9zd5YaBeE@FfMLY9EDYFIK9q7GR7Eb2w==@KSpL1kQJ2MbEe7QtyxQM_Q==@IgqdQZFhwqmJRKnxXUsB56t9zd5YaBeE@mmlJVS64bjNwWxK4G-e7jQ=='
+'pTAIBPCrVYql6xuHRWk3wg==@p-8cvapR4OUiqt7cOdu7YKt9zd5YaBeE@FfMLY9EDYFIK9q7GR7Eb2w==@KSpL1kQJ2MbEe7QtyxQM_Q==@IgqdQZFhwqmJRKnxXUsB56t9zd5YaBeE@mmlJVS64bjNwWxK4G-e7jQ==@JXhQXaAINwRVSCiZMT2VmKt9zd5YaBeE'
 ];
 const randomCount = $.isNode() ? 10 : 5;
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
@@ -177,7 +177,7 @@ if ($.isNode()) {
   $.selfCodes = []
   for (let i = 0; i < cookiesArr.length; i++) {
     if (i%2===0) {
-      $.nextCode = ["pTAIBPCrVYql6xuHRWk3wg==", "j4aIibI_eAy4YBMMIEVVqQ=="];
+      $.nextCode = ["pTAIBPCrVYql6xuHRWk3wg==", "p-8cvapR4OUiqt7cOdu7YKt9zd5YaBeE","FfMLY9EDYFIK9q7GR7Eb2w==","KSpL1kQJ2MbEe7QtyxQM_Q==","IgqdQZFhwqmJRKnxXUsB56t9zd5YaBeE","mmlJVS64bjNwWxK4G-e7jQ==","JXhQXaAINwRVSCiZMT2VmKt9zd5YaBeE"];
       $.nextCode = $.nextCode[randomNumber(0, $.nextCode.length)];
     }
     if (cookiesArr[i]) {
