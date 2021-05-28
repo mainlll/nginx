@@ -215,7 +215,7 @@ function harmony_collectScore(timeout = 0) {
   })
 }
 
-function updateShareCodes(url = 'https://raw.githubusercontent.com/mainlll/nginx/blob/master/jd_lotteryMachine.js') {
+function updateShareCodes(url = 'https://raw.githubusercontent.com/mainlll/nginx/master/jd_lotteryMachine.js') {
   return new Promise(resolve => {
     const options = {
       url: `${url}?${Date.now()}`, "timeout": 10000, headers: {
@@ -249,7 +249,7 @@ function updateShareCodes(url = 'https://raw.githubusercontent.com/mainlll/nginx
     })
   })
 }
-function updateShareCodesCDN(url = 'https://cdn.jsdelivr.net/gh/mainlll/nginx/blob/master/jd_lotteryMachine.js') {
+function updateShareCodesCDN(url = 'https://cdn.jsdelivr.net/gh/mainlll/nginx/master/jd_lotteryMachine.js') {
   return new Promise(async resolve => {
     $.get({url: `${url}?${Date.now()}`, timeout: 10000}, async (err, resp, data) => {
       try {
